@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Readex Pro", sans-serif;
+  box-sizing: border-box;
+
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#153677,#4e085f);
+  padding: 10px;
+}
+.todo-app{
+  width: 100%;
+  max-width: 540PX;
+  background-color: #fffffff3;
+  margin:100px auto;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+
+
+.todo-app h2{
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left:  200px;
+
+
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(2, 101, 158, 0.945);
+  border-radius: 30px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+#input-box{
+background: transparent;
+border: none;
+padding: 10px;
+width: 100%;
+color: rgb(255, 255, 255);
+outline: none;
+font-size: 20px;
+
+
+}
+#input-box::placeholder{
+  color: #fff;
+  font-size: 20px;
+}
+
+button{
+  padding: 16px 18px;
+  margin-right: 100px;
+  border-radius: 40px;
+  font-size: 20px;
+  background-color: rgb(255, 204, 95);
+  border: none;
+  outline: none;
+  margin-left: -12px;
+  transition: 0.4s;
+}
+button:hover{
+  background-color: rgb(255, 239, 95);
+
+}
+ul li{
+  list-style: none;
+}
+.icons{
+  user-select: none;
+  display: flex;
+}
+.tasks ul{
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+
+}
+
+#delete img{
+transition: 0.45s;
+}
+#delete img:hover{
+  scale: 1.05 1.06;
+}
+
+#edit img{
+  transition: 0.45s;
+  }
+  #edit img:hover{
+    scale: 1.05 1.06;
+  }
+#checked1 img{
+    transition: 0.45s;
+    }
+#checked1 img:hover{
+      scale: 1.08 1.09;
+    }
+      
+li.completed{  text-decoration: line-through;
+}    
+ul.completed{
+  color: rgba(72, 176, 245, 0.705);
+  background-color: rgba(172, 255, 47, 0.438);
+  opacity: 0.6;
+}
